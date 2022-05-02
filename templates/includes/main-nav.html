@@ -17,15 +17,18 @@
                 Sweet Treats
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Cookies</a>
-                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Pastries</a>
-                <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Cakes</a>
-                <a href="{% url 'products' %}?category=activewear,essentials,jeans,shirts" class="dropdown-item">All Treats</a>
+                <a href="{% url 'products' %}?category=cake" class="dropdown-item">Cakes</a>
+                <a href="{% url 'products' %}?category=cheesecake" class="dropdown-item">Cheesecake</a>
+                <a href="{% url 'products' %}?category=cookies" class="dropdown-item">Cookies</a>
+                <a href="{% url 'products' %}?category=cupcakes" class="dropdown-item">Cupcakes</a>
+                <a href="{% url 'products' %}?category=doughnuts" class="dropdown-item">Doughnuts</a>
+                <a href="{% url 'products' %}?category=pastries" class="dropdown-item">Pastries</a>
+                <a href="{% url 'products' %}?category=cookies,pastries,doughnuts,cheesecake,cake,cupcakes" class="dropdown-item">All Treats</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=bed_bath" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=bread" aria-haspopup="true" aria-expanded="false">
                 Bread
             </a>
         </li>
@@ -35,10 +38,10 @@
                 By Occasion
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">Birthday Cakes</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Wedding Cakes</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Custom</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">View All</a>
+                <a href="{% url 'products' %}?category=birthday_cakes" class="dropdown-item">Birthday Cakes</a>
+                <a href="{% url 'products' %}?category=wedding_cakes" class="dropdown-item">Wedding Cakes</a>
+                <a href="{% url 'products' %}?category=custom" class="dropdown-item">Custom</a>
+                <a href="{% url 'products' %}?category=birthday_cakes,wedding_cakes,custom" class="dropdown-item">View All</a>
             </div>
         </li>
     </ul>
