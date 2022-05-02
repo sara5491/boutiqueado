@@ -44,6 +44,39 @@ body {
     line-height: 1rem;
 }
 
+.half-right {
+    background-color: lightsalmon;
+}
+
+.half-left  img,
+.half-right img {
+  height: auto;
+  width: 100%;
+}
+
+.custom {
+    padding-top: 3rem;
+}
+
+.section-2-p {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.col-xs-12 {
+  margin-bottom: 14px;
+  margin-top: 14px;
+  min-height: 200px;
+}
+
+.cta-white, .cta-black:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 0;
+}
+
 /* back to top */
 .btt-button {
     z-index: 99;
