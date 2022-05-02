@@ -112,6 +112,7 @@
         </div>
     </header>
 
+
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
@@ -133,8 +134,10 @@
     {% block page_header %}
     {% endblock %}
 
+
     {% block content %}
     {% endblock %}
+    
     <!-- footer -->
     <footer class="container-fluid footer-container">
         <div class="row">
@@ -193,6 +196,5 @@
     </script>
     {% endblock %}
 
-    
   </body>
 </html>

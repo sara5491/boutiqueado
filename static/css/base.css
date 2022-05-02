@@ -10,6 +10,15 @@ body {
     font-family: "Lato";
 }
 
+/* back to top */
+.btt-button {
+    z-index: 99;
+}
+
+.btt-button:hover {
+    background-color: #007bff;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -174,11 +183,6 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* back to top */
-.btt-button:hover {
-    background-color: #007bff;
-}
-
 /* footer */
 .footer-container {
     background-color: #17a2b8;
@@ -214,7 +218,7 @@ input[name='q']::placeholder {
 }
 
 .footer-menu-link:hover {
-    color: #17a2b8;
+    color: #f8f9fa;
 }
 
 

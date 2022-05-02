@@ -54,14 +54,24 @@
                         <div class="form-row">
                             {% with product.has_sizes as s %}
                             {% if s %}
-                                <div class="col-12">
-                                    <p><strong>Customise:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                                        <option value="l" selected>No Customisation</option>
-                                        <option value="s">Vegan</option>
-                                        <option value="m">Gluten Free</option>
-                                    </select>
-                                </div>
+                                {% if product.category.name == "bread" %}
+                                    <div class="col-12">
+                                        <p><strong>Customise:</strong></p>
+                                        <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                            <option value="l" selected>No Customisation</option>
+                                            <option value="s">Gluten Free</option>
+                                        </select>
+                                    </div>
+                                    {% else %}
+                                    <div class="col-12">
+                                        <p><strong>Customise:</strong></p>
+                                        <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                            <option value="l" selected>No Customisation</option>
+                                            <option value="s">Vegan</option>
+                                            <option value="m">Gluten Free</option>
+                                        </select>
+                                    </div>
+                                {% endif %}
                             {% endif %}
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
