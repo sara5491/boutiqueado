@@ -135,6 +135,57 @@
 
     {% block content %}
     {% endblock %}
+    <!-- footer -->
+    <footer class="container-fluid footer-container">
+        <div class="row">
+            <!----- about us ----->
+            <div class="col-12 col-md-5 text-center mt-4">
+                <h1>Flour & Fauna</h1>
+                <hr>
+                <p>
+                    about us text
+                </p>
+            </div>
+            <!----- menu ----->
+            <div class="col-12 col-md text-center mt-4">
+                <h1>Menu</h1>
+                <hr>
+                <p><a href="{% url 'products' %}?category=cakes,cookies" class="footer-menu-link">Sweet Treats</a></p>
+                <p><a href="{% url 'products' %}?category=bread" class="footer-menu-link">Bread</a></p>
+                <p><a href="{% url 'products' %}?category=wedding_cakes,birthday_cakes" class="footer-menu-link">Occasion Cakes</a></p>
+                <p><a href="{% url 'profile' %}" class="footer-menu-link">My Profile</a></p>
+            </div>
+            <!----- contact us ----->
+            <div class="col-12 col-md-5 text-center mt-4">
+                <h1>Contact Us</h1>
+                <hr>
+                <p><i class="fas fa-phone"></i> phone</p>
+                <p><i class="fas fa-envelope-open"></i> email</p>
+                <p><i class="fas fa-map-marker-alt"></i> address</p>
+                <!----- socials ----->
+                <ul class="list-inline d-flex justify-content-center">
+                    <li class="list-inline-item footer-li">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram footericon" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item footer-li">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube footericon" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item footer-li">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-p footericon" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     {% block postloadjs %}
     <script type="text/javascript">
