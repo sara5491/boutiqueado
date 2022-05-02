@@ -10,6 +10,10 @@ body {
     font-family: "Lato";
 }
 
+.logo {
+    width: 12rem;
+}
+
 /* back to top */
 .btt-button {
     z-index: 99;
