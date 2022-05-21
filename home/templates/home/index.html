@@ -10,91 +10,48 @@
 {% endblock %}
 
 {% block content %}
-<div id="homepage-header">
+<section id="home" class="jumbotron jumbotron-fluid">
     <div class="container">
         <div class="row">
-            <div class="col-7 col-md-6">
-            </div>
-            <div class="col-12">
-                <div class="header-content ml-auto">
-                    <div class="header-text">
-                        <h1 id="hp-header-h1">Flour & Fauna</h1>
-                        <p id="hp-header">Shop Now</p>
-                    </div>
+            <div class="col-10 col-md-8">
+                <h2 class="mt-5">
+                    Flour & Fauna 
+                </h2>
+                <div class="shop-now">
+                    <h3 class="mt-5">
+                        <a href="{% url 'products' %}" class="btn btn-md btn-secondary rounded-0 text-uppercase py-3 shop">Shop Now</a>
+                    </h3>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container-fluid div-section">
-    <div class="container hp-section-1-heading">
-        <h3 class="new">Latest Products</h3>
-    </div>
-    <!--- latest products --->
-    <div class="row hp-section-1 mt-4">
-        <div class="container">
-            <div class="row product-card-row mb-5">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="div-product-card">
-                        <div class="div-product-card-img">
-                            <div class="product-card-content">
-                                <!--- product one --->
-                                <a href="{% url 'products' %}" class="product-page-link">
-                                    <img class="div-product-card-img" src="/media/logo.png" alt="product image">
-                                </a>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="div-product-card">
-                        <div class="div-product-card-img">
-                            <!--- product two --->
-                            <div class="product-card-content">
-                                <a href="{% url 'products' %}" class="product-page-link">
-                                    <img class="div-product-card-img" src="/media/logo.png" alt="product image">
-                                </a>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="div-product-card">
-                        <div class="div-product-card-img">
-                            <!--- product three --->
-                            <div class="product-card-content">
-                                <a href="{% url 'products' %}" class="product-page-link">
-                                    <img class="div-product-card-img" src="/media/logo.png" alt="product image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</section>
+<hr>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-6 half-left ">
-            <img src="/media/logo.png" alt="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-6">
+    <div class="hero-title">
+        <h1>
+            Popular Products
+        </h1>
+    </div>
+</div>
+<hr>
+<div class="container-fluid">
+    <div>
+        <div class="col-12 mt-3 center">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="card md-4 index-image">
+                        <div>
+                            <img src="/media/bagel.jpg" alt="bagel" class="card-img-top index-button-image">
+                            <a href="{% url 'products' %}?category=bread" class="index-link">Bread</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-sm-6 half-right">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h2 class="custom">Custom Cakes</h2>
-                        <p class="section-2-p">custom cakes text</p>
-                        <div class="section-cta">
-                            <a href="{% url 'products' %}" class="cta cta-white ml-auto">Shop here</a>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="card md-4 index-image">
+                        <div>
+                            <img src="/media/berries.jpg" alt="bagel" class="card-img-top index-button-image">
+                            <a href="{% url 'products' %}?category=bread" class="index-link">Bread</a>
                         </div>
                     </div>
                 </div>

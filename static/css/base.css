@@ -1,9 +1,11 @@
 html {
-    height: 100%;
+    height: 100vh;
 }
 
-body {
-    font-family: "Lato";
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -11,63 +13,16 @@ body {
 }
 
 /* homepage */
-#homepage-header {
-    background: url('/media/homepage-background.jpg') no-repeat center;
-    height: 800px;
-    background-size: cover;
-    margin-bottom: 4.5rem;
-    height: 90vh;
+.jumbotron {
+    margin: 0;
+    background: url('/media/homepage-background.jpg') no-repeat center center;
+    min-height: 80vh;
+    background-size:cover;
 }
 
-#hp-header {
-    font-weight: 100;
-    font-size: 40px;
+#home h2 {
+    font-size: 6rem;
     color: white;
-    line-height: 1rem;
-}
-
-#hp-header-h1 {
-    color: white;
-    font-weight: 600;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 60px;
-    text-align: left;
-    margin-left: 5rem;
-}
-
-.header-content {
-    margin-top: 20%;
-}
-
-.new {
-    text-align: center;
-    font-size: 2.5rem;
-    line-height: 1rem;
-}
-
-.half-right {
-    background-color: lightsalmon;
-}
-
-.half-left  img,
-.half-right img {
-  height: auto;
-  width: 100%;
-}
-
-.custom {
-    padding-top: 3rem;
-}
-
-.section-2-p {
-    font-size: 1.2rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-
-.col-xs-12 {
-  margin-bottom: 14px;
-  margin-top: 14px;
-  min-height: 200px;
 }
 
 .cta-white, .cta-black:hover {
@@ -75,6 +30,49 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 0;
+}
+
+.index-title {
+    font-size: 60px;
+    text-align: center;
+}
+
+.index-title h1 {
+    font-family: 'Lato', sans-serif;
+    color: #B28649;
+    font-weight: bold;
+}
+
+.index-image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.index-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: lightgrey;
+    opacity: 0.8;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+.hero-title h1 {
+    font-size: 50px;
 }
 
 /* back to top */
@@ -251,41 +249,49 @@ input[name='q']::placeholder {
 }
 
 /* footer */
-.footer-container {
-    background-color: #17a2b8;
+main {
+    flex: 1 0 auto;
+}
+
+#footer {
+    height: auto;
+    background-color: lightcoral;
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
     margin-top: auto;
-    width: 100%;
 }
 
-.footer-container div hr {
-    margin: 0 auto;
-    width: 50%;
-    margin-bottom: 10px;
-    color: #000;
+/* Social media links */
+.social {
+    color: white;
+    padding: 20px;
+    font-size: x-large;
 }
 
-.footer-container div p {
-    margin-bottom: 5px;
-}
-
-.footer-menu-link {
-    color: #000;
+.fa-twitter:hover {
+    color: #e6c796;
     text-decoration: none;
 }
 
-.footericon {
-    color: #17a2b8;
-    font-size: 24px;
-    padding-left: 5px;
-    padding-right: 5px;
+.fa-instagram:hover {
+    color: #e6c796;
+    text-decoration: none;
 }
 
-.footer-li {
-    margin-top: 5px;
+.fa-pinterest:hover {
+    color: #e6c796;
+    text-decoration: none;
 }
 
-.footer-menu-link:hover {
-    color: #f8f9fa;
+.fa-facebook:hover {
+    color: #e6c796;
+    text-decoration: none;
 }
 
 
