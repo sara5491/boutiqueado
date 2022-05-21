@@ -72,10 +72,12 @@ body{
 
 .hero-title {
     text-align: center;
+    letter-spacing: 4px;
 }
 
-.hero-title h1 {
-    font-size: 50px;
+hr {
+border:dashed 1px lightgrey;
+width: 75%;
 }
 
 /* back to top */
