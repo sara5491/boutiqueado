@@ -89,6 +89,12 @@ width: 75%;
     background-color: #007bff;
 }
 
+/* custom page */
+.gallery {
+    width: 35vh;
+    margin: auto;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
