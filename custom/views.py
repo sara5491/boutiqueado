@@ -20,16 +20,17 @@ def custom(request):
                 {'message': message, 'email': email, 'name': name})
 
             send_mail(
-                body,
+                'body',
+                'message',
                 settings.DEFAULT_FROM_EMAIL,
                 [settings.DEFAULT_FROM_EMAIL],
                 fail_silently=False,
             )
 
-            messages.success(request, 'Your message has been sent!')
+            messages.success(request, 'Message sent!')
             return redirect(reverse('custom'))
         else:
-            messages.error(request, 'Oops! Something went wrong with your form!')
+            messages.error(request, 'omething went wrong with your form!')
     else:
         custom_form = CustomForm()
 
