@@ -1,0 +1,8 @@
+Hello, 
+
+You have a new message from: {{ name }}, 
+
+{{ message }}
+
+Customer's email address:
+{{ email }} 
